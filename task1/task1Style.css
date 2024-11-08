@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('body-background.jpg');
+}
+
+.container {
+    width: 500px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.top-section {
+    position: relative;
+    height: 400px;
+}
+
+#bImage {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0px 0px 0px 70px;
+}
+
+#backIcon {
+    z-index: 200;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-image: url('https://png.pngtree.com/png-vector/20190508/ourmid/pngtree-back-vector-icon-png-image_1027062.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#overlaytext {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px black;
+}
+
+#mostPlayed {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #f0e6ff;
+}
+
+.stats {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #f0e6ff;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.stat-item {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.stat-item span {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.bottom-section {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.achievement-item .text {
+    text-align: left;
+    color: red;
+}
+
+.achievement-item .text span {
+    display: block;
+    font-size: 1.2rem;
+    color: #ff5858;
+    font-weight: bold;
+}
+
+.achievement-item .text p {
+    color: red;
+    font-size: 0.9rem;
+}
+
+.icon-image {
+    border: 2px solid red;
+    border-radius: 50%;
+}
